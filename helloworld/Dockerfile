@@ -5,4 +5,4 @@ RUN gcc hello.c -o hello.out
 
 FROM alpine:latest
 COPY --from=builder /hellosrc/hello.out /hello.out
-CMD ["./hello.out"]
+CMD ["/hello.out"]
